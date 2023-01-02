@@ -1,0 +1,15 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  JoseUgal\Apps\Mooc\Backend\Controller\:
+    resource: '../src/Controller'
+    tags: ['controller.service_arguments']
+
+  # Wire
+  JoseUgal\Shared\:
+    resource: '../../../../src/Shared'
+
+  JoseUgal\Mooc\:
+    resource: '../../../../src/Mooc'
