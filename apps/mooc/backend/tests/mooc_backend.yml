@@ -15,3 +15,8 @@ mooc_backend:
       paths: [ apps/mooc/backend/tests/features/health_check ]
       contexts:
         - JoseUgal\Tests\Shared\Infrastructure\Behat\ApiContext
+
+    practice_01:
+      paths: [ apps/mooc/backend/tests/features/practice-01 ]
+      contexts:
+        - JoseUgal\Tests\Shared\Infrastructure\Behat\ApiContext

@@ -1,0 +1,4 @@
+practice-01_get:
+  path: /practice/01
+  controller: JoseUgal\Apps\Mooc\Backend\Controller\Practices\Practice01GetController
+  methods: [GET]
