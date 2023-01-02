@@ -1,0 +1,13 @@
+framework:
+  test: true
+
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  JoseUgal\Tests\:
+    resource: '../../../../tests'
+
+  # Instance selector
+  JoseUgal\Shared\Domain\RandomNumberGenerator: '@JoseUgal\Tests\Shared\Infrastructure\ConstantRandomNumberGenerator'
