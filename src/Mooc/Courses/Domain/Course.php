@@ -7,43 +7,43 @@ namespace JoseUgal\Mooc\Courses\Domain;
 class Course
 {
 
-    private $id;
-    private $name;
-    private $duration;
+    private CourseId $id;
+    private CourseName $name;
+    private CourseDuration $duration;
 
-    public function __construct(string $id, string $name, string $duration)
+    public function __construct(CourseId $id, CourseName $name, CourseDuration $duration)
     {
         $this->id           = $id;
         $this->name         = $name;
         $this->duration     = $duration;
     }
 
-    public function id(): string
+    public function id(): CourseId
     {
         return $this->id;
     }
 
-    public function setId(string $id): void
-    {
-        $this->id = $id;
-    }
-
-    public function name(): string
+    public function name(): CourseName
     {
         return $this->name;
     }
 
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    public function duration(): string
+    public function duration(): CourseDuration
     {
         return $this->duration;
     }
 
-    public function setDuration(string $duration): void
+    public function setId(CourseId $id): void
+    {
+        $this->id = $id;
+    }
+
+    public function setName(CourseName $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function setDuration(CourseDuration $duration): void
     {
         $this->duration = $duration;
     }

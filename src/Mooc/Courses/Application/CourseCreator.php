@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace JoseUgal\Mooc\Courses\Application;
 
 use JoseUgal\Mooc\Courses\Domain\Course;
+use JoseUgal\Mooc\Courses\Domain\CourseDuration;
+use JoseUgal\Mooc\Courses\Domain\CourseId;
+use JoseUgal\Mooc\Courses\Domain\CourseName;
 use JoseUgal\Mooc\Courses\Domain\CourseRepository;
 
 final class CourseCreator
@@ -19,9 +22,9 @@ final class CourseCreator
     public function __invoke(CreateCourseRequest $request): void
     {
         $course = new Course(
-            $request->id(),
-            $request->name(),
-            $request->duration()
+            new CourseId($request->id()),
+            new CourseName($request->name()),
+            new CourseDuration($request->duration())
         );
 
         $this->repository->save($course);
