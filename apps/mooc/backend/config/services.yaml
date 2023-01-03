@@ -13,3 +13,8 @@ services:
 
   JoseUgal\Mooc\:
     resource: '../../../../src/Mooc'
+
+  # -- TAGGING --
+  JoseUgal\Shared\Infrastructure\Symfony\AddJsonBodyToRequestListener:
+    tags:
+      - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

@@ -4,5 +4,8 @@ start-local:
 stop-local:
 	symfony server:stop --dir=apps/mooc/backend/public
 
-tests:
+a-tests:
 	 php ./vendor/bin/behat -p mooc_backend
+
+u-test:
+	php ./vendor/bin/phpunit
