@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace JoseUgal\Tests\Mooc\Courses\Application;
 
+use JoseUgal\Mooc\Courses\Application\CreateCourseRequest;
 use JoseUgal\Mooc\Courses\Domain\Course;
 use JoseUgal\Mooc\Courses\Application\CourseCreator;
 use JoseUgal\Mooc\Courses\Domain\CourseRepository;
@@ -23,6 +24,6 @@ final class CourseCreatorTest extends TestCase
         $course = new Course($id, $name, $duration);
         $repository->method('save')->with($course);
 
-        $creator->__invoke($id, $name, $duration);
+        $creator->__invoke(new CreateCourseRequest($id, $name, $duration));
     }
 }
