@@ -19,7 +19,8 @@
     "symfony/cache": "6.2.4",
     "symfony/console": "6.2.3",
 
-    "ramsey/uuid": "4.7"
+    "ramsey/uuid": "4.7.1",
+    "fakerphp/faker": "^1.21"
   },
   "require-dev": {
     "symfony/error-handler": "6.2.3",

@@ -32,19 +32,4 @@ final class CreateCourseRequest
         return $this->duration;
     }
 
-    public function setId(string $id): void
-    {
-        $this->id = $id;
-    }
-
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    public function setDuration(string $duration): void
-    {
-        $this->duration = $duration;
-    }
-
 }

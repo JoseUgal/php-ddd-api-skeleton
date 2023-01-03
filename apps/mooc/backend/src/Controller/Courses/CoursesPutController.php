@@ -23,7 +23,9 @@ final class CoursesPutController
         $name = $request->get('name');
         $duration = $request->get('duration');
 
-        $this->creator->__invoke(new CreateCourseRequest($id, $name, $duration));
+        $courseCreatorRequest = new CreateCourseRequest($id, $name, $duration);
+
+        $this->creator->__invoke($courseCreatorRequest);
 
         return new Response('', Response::HTTP_CREATED);
     }
