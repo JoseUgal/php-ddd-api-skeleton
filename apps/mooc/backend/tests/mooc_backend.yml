@@ -20,3 +20,8 @@ mooc_backend:
       paths: [ apps/mooc/backend/tests/features/courses ]
       contexts:
         - JoseUgal\Tests\Shared\Infrastructure\Behat\ApiContext
+
+    users:
+      paths: [ apps/mooc/backend/tests/features/users ]
+      contexts:
+        - JoseUgal\Tests\Shared\Infrastructure\Behat\ApiContext
