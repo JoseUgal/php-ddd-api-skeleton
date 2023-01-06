@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace JoseUgal\Mooc\Courses\Infrastructure;
+namespace JoseUgal\Mooc\Courses\Infrastructure\Persistence;
 
 use JoseUgal\Mooc\Courses\Domain\Course;
-use JoseUgal\Mooc\Courses\Domain\CourseId;
 use JoseUgal\Mooc\Courses\Domain\CourseRepository;
+use JoseUgal\Mooc\Shared\Domain\Courses\CourseId;
 
 final class FileCourseRepository implements CourseRepository
 {

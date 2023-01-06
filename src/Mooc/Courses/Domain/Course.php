@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace JoseUgal\Mooc\Courses\Domain;
 
-class Course
+use JoseUgal\Mooc\Shared\Domain\Courses\CourseId;
+use JoseUgal\Shared\Domain\Aggregate\AggregateRoot;
+
+final class Course extends AggregateRoot
 {
 
     private CourseId $id;

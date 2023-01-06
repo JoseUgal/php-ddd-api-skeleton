@@ -28,6 +28,7 @@
         <env name="APP_ENV" value="test"/>
     </php>
 
+
     <testsuites>
         <testsuite name="mooc">
             <directory>./tests/Mooc</directory>

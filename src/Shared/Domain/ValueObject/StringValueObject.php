@@ -6,7 +6,7 @@ namespace JoseUgal\Shared\Domain\ValueObject;
 
 abstract class StringValueObject
 {
-    private string $value;
+    protected string $value;
 
     public function __construct(string $value)
     {

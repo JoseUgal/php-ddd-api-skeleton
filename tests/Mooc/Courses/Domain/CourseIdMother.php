@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace JoseUgal\Tests\Mooc\Courses\Domain;
 
-use JoseUgal\Mooc\Courses\Domain\CourseId;
+use JoseUgal\Mooc\Shared\Domain\Courses\CourseId;
 use JoseUgal\Tests\Shared\Domain\UuidMother;
 
 final class CourseIdMother

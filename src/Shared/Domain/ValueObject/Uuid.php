@@ -9,7 +9,7 @@ use Ramsey\Uuid\Uuid as RamseyUuid;
 
 class Uuid
 {
-    private string $value;
+    protected $value;
 
     public function __construct(string $value)
     {
@@ -18,9 +18,21 @@ class Uuid
         $this->value = $value;
     }
 
+    public static function random(): self
+    {
+        return new self(RamseyUuid::uuid4()->toString());
+    }
+
     public function value(): string
     {
         return $this->value;
+    }
+
+    private function ensureIsValidUuid($id): void
+    {
+        if (!RamseyUuid::isValid($id)) {
+            throw new InvalidArgumentException(sprintf('<%s> does not allow the value <%s>.', static::class, $id));
+        }
     }
 
     public function equals(Uuid $other): bool
@@ -28,15 +40,8 @@ class Uuid
         return $this->value() === $other->value();
     }
 
-    public static function random(): self
+    public function __toString()
     {
-        return new self(RamseyUuid::uuid4()->toString());
-    }
-
-    private function ensureIsValidUuid(string $id): void
-    {
-        if(!RamseyUuid::isValid($id)) {
-            throw new InvalidArgumentException(sprintf('<%s> does not allow the value <%s>', static::class, $id));
-        }
+        return $this->value();
     }
 }

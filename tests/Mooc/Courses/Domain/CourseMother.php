@@ -7,8 +7,8 @@ namespace JoseUgal\Tests\Mooc\Courses\Domain;
 use JoseUgal\Mooc\Courses\Application\CreateCourseRequest;
 use JoseUgal\Mooc\Courses\Domain\Course;
 use JoseUgal\Mooc\Courses\Domain\CourseDuration;
-use JoseUgal\Mooc\Courses\Domain\CourseId;
 use JoseUgal\Mooc\Courses\Domain\CourseName;
+use JoseUgal\Mooc\Shared\Domain\Courses\CourseId;
 
 final class CourseMother
 {

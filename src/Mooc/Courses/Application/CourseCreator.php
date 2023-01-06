@@ -6,9 +6,9 @@ namespace JoseUgal\Mooc\Courses\Application;
 
 use JoseUgal\Mooc\Courses\Domain\Course;
 use JoseUgal\Mooc\Courses\Domain\CourseDuration;
-use JoseUgal\Mooc\Courses\Domain\CourseId;
 use JoseUgal\Mooc\Courses\Domain\CourseName;
 use JoseUgal\Mooc\Courses\Domain\CourseRepository;
+use JoseUgal\Mooc\Shared\Domain\Courses\CourseId;
 
 final class CourseCreator
 {

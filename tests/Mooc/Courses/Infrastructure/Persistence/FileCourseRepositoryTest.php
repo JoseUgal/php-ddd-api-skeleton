@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace JoseUgal\Tests\Mooc\Courses\Infrastructure;
+namespace JoseUgal\Tests\Mooc\Courses\Infrastructure\Persistence;
 
-use JoseUgal\Mooc\Courses\Infrastructure\FileCourseRepository;
+use JoseUgal\Mooc\Courses\Infrastructure\Persistence\FileCourseRepository;
 use JoseUgal\Tests\Mooc\Courses\Domain\CourseIdMother;
 use JoseUgal\Tests\Mooc\Courses\Domain\CourseMother;
 use PHPUnit\Framework\TestCase;

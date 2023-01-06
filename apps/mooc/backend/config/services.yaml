@@ -1,3 +1,6 @@
+imports:
+  - { resource: ../../../../src/Mooc/Shared/Infrastructure/Symfony/DependencyInjection/mooc_services.yaml }
+
 services:
   _defaults:
     autoconfigure: true

@@ -4,7 +4,7 @@
   "type": "project",
   "description": "An example API Skeleton project applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository",
   "require": {
-    "php": ">=8.0",
+    "php": ">=8.1",
 
     "ext-json": "*",
     "ext-zend-opcache": "*",
@@ -20,7 +20,13 @@
     "symfony/console": "6.2.3",
 
     "ramsey/uuid": "4.7.1",
-    "fakerphp/faker": "^1.21"
+
+    "fakerphp/faker": "1.21",
+
+    "lambdish/phunctional": "2.1",
+
+    "doctrine/dbal": "3.5.2",
+    "doctrine/orm": "2.14.0"
   },
   "require-dev": {
     "symfony/error-handler": "6.2.3",
@@ -30,7 +36,8 @@
     "friends-of-behat/symfony-extension": "2.3.1",
     "behat/mink-browserkit-driver": "2.1.0",
 
-    "phpunit/phpunit": "9.5.27"
+    "phpunit/phpunit": "9.5.27",
+    "mockery/mockery": "1.5.1"
   },
   "autoload": {
     "psr-4": {
